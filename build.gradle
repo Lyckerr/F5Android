@@ -1,15 +1,15 @@
 apply plugin: 'com.android.library'
-
 android {
-    compileSdkVersion 25
-    buildToolsVersion "24.0.3"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 25
+        minSdkVersion 19
+        targetSdkVersion 26
 
         ndk {
             moduleName "F5Buffers"
+            abiFilters "arm64-v8a", "armeabi-v7a", "x86"
         }
     }
 
@@ -18,5 +18,13 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
+    }
+}
+dependencies {
+}
+allprojects {
+    repositories {
+        google()
+        jcenter()
     }
 }

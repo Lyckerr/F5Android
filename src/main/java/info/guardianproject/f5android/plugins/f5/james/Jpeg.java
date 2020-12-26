@@ -33,7 +33,7 @@ public class Jpeg {
 	int Quality;
 	
 	public static final int DEFAULT_QUALITY = 80;
-	public static final String LOG = "***************** JPEG-STEGO ******************";
+	public static final String LOG = "***** JPEG-STEGO ******";
 	
 	public Jpeg(Activity a, String in_file_name, String out_file_name, byte[] f5_seed, StegoProcessThread thread_monitor) {
 		this(a, in_file_name, DEFAULT_QUALITY, null, f5_seed, thread_monitor);

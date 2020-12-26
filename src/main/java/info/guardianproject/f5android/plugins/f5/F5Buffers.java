@@ -9,7 +9,7 @@ import android.app.Activity;
 import android.util.Log;
 
 public class F5Buffers implements PluginNotificationListener {
-	public final static String LOG = "************** PK JNI WRAPPER **************";
+	public final static String LOG = "**** JNI WRAPPER ****";
 	private Activity a;
 	private ByteBuffer f5, coeffs, buffer, decode_buffer, permutation;
 	private String cleanup_string;
@@ -195,7 +195,7 @@ public class F5Buffers implements PluginNotificationListener {
 	}
 	
 	public void cleanUpCoeffs() {
-		Log.d(LOG, "cleanup coeffs");
+		Log.d(LOG, "cleanup coefficients");
 		cleanUpCoeffs(coeffs);
 		onUpdate(cleanup_string);
 	}
